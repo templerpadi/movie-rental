@@ -1,9 +1,20 @@
 package movierental;
 
+
+
 /**
  * The rental class represents a customer renting a movie.
  */
 public class Rental {
+
+    double getCharge(){
+        return _movie.getCharge(_daysRented);
+    }
+        
+    public int getFrequentRenterPoints(){
+        return _movie.getFrequentRenterPoints(_daysRented);
+        }
+        
 
     private Movie _movie;
     private int _daysRented;
